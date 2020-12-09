@@ -12,41 +12,86 @@
 </script>
   <title>SNS - Instagram</title>
   <meta charset="utf-8">
+  <style>
+    a {
+      color:green;
+      text-decoration: none;
+    }
+    h1 {
+      font-size:60px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:25px;
+    }
+    ol {
+      border-right:1px solid gray;
+      width:100px;
+      margin:0;
+      padding:20px;
+      font-size:18px;
+    }
+    body {
+      margin:0;
+    }
+    #grid {
+      display:grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ol {
+      padding:32px;
+    }
+    #article {
+      padding-left: 35px;
+    }
+  </style>
 </head>
 <body>
   <h1><a href="index.html">SNS</a></h1>
-  <ol>
-    <li><a href="1.html">Instagram</a></li>
-    <li><a href="2.html">Facebook</a></li>
-    <li><a href="3.html">Twitter</a></li>
-  </ol>
-  <h2>Instagram</h2>
-  <p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/wKyMIrBClYw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </p>
-  <p><strong><a href="https://en.wikipedia.org/wiki/Instagram" target="_blank" title="wikipedia">Instagram (commonly abbreviated to IG or Insta)</a></strong> is an <u>American photo and video sharing <strong>social networking service</strong> owned by Facebook</u>, created by Kevin Systrom and Mike Krieger and originally launched on iOS in October 2010. The Android version was released in April 2012, followed by a feature-limited desktop interface in November 2012, a Fire OS app in June 2014, and an app for Windows 10 in October 2016.</p>
-  <p style="margin-top:30px;"><img src="인스타그램.jpg" width="50%"></p>
-  <p>The app allows users to upload media that can be edited with filters and organized by hashtags and geographical tagging. Posts can be shared publicly or with pre-approved followers. Users can browse other users' content by tags and locations and view trending content. Users can like photos and follow other users to add their content to a feed, a function that seems to be discontinued as of September 2020.</p>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">Instagram</a></li>
+      <li><a href="2.html">Facebook</a></li>
+      <li><a href="3.html">Twitter</a></li>
+    </ol>
+    <!--
+    <h1><a href="index.html"><font color="red">SNS</font></a></h1>
+    <ol>
+      <li><a href="1.html"><font color="red">Instagram</font></a></li>
+      <li><a href="2.html"><font color="red">Facebook</font></a></li>
+      <li><a href="3.html"><font color="red">Twitter</font></a></li>
+    </ol>
+    -->
+    <div id="article">
+        <h2>Instagram</h2>
+        <p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/wKyMIrBClYw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+        <p><strong><a href="https://en.wikipedia.org/wiki/Instagram" target="_blank" title="wikipedia">Instagram (commonly abbreviated to IG or Insta)</a></strong> is an <u>American photo and video sharing <strong>social networking service</strong> owned by Facebook</u>, created by Kevin Systrom and Mike Krieger and originally launched on iOS in October 2010. The Android version was released in April 2012, followed by a feature-limited desktop interface in November 2012, a Fire OS app in June 2014, and an app for Windows 10 in October 2016.</p>
+        <p style="margin-top:30px;"><img src="인스타그램.jpg" width="50%"></p>
+        <p>The app allows users to upload media that can be edited with filters and organized by hashtags and geographical tagging. Posts can be shared publicly or with pre-approved followers. Users can browse other users' content by tags and locations and view trending content. Users can like photos and follow other users to add their content to a feed, a function that seems to be discontinued as of September 2020.</p>
+    </div>
+  </div>
   <p>
     <!-- 라이브리 시티 설치 코드 -->
   <div id="lv-container" data-id="city" data-uid="MTAyMC81MjE0Ny8yODYyNw==">
   <script type="text/javascript">
-  window.livereOptions = {
-	refer: 'nought48.github.io/1.html'
-  };
-   (function(d, s) {
-       var j, e = d.getElementsByTagName(s)[0];
+    window.livereOptions= {
+      refer:'www,nought48.github.io/'
+    };
+     (function(d, s) {
+         var j, e = d.getElementsByTagName(s)[0];
 
-       if (typeof LivereTower === 'function') { return; }
+         if (typeof LivereTower === 'function') { return; }
 
-       j = d.createElement(s);
-       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-       j.async = true;
+         j = d.createElement(s);
+         j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+         j.async = true;
 
-       e.parentNode.insertBefore(j, e);
-   })(document, 'script');
+         e.parentNode.insertBefore(j, e);
+     })(document, 'script');
   </script>
-  <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+  <noscript>라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
   </div>
   <!-- 시티 설치 코드 끝 -->
   </p>
